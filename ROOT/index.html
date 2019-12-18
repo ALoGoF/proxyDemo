@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>代理示例</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+		
+<script>
+$.get({
+    url:'http://localhost:3000/constellation/getAll',
+    data:'key=3189c7ad62842ee99fa0dd6f35e363d7&consName=双鱼座&type=today',
+    success:(res)=>{
+        console.log('object', res)
+    }
+});
+$.get({
+    url:'http://localhost:3000/dream/category?',
+    data:'key=e959555ecdfaf23170ed900a0d32615e',
+    success:(res)=>{
+        console.log('object', res)
+    }
+});
+</script>
+</html>
